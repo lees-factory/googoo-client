@@ -8,11 +8,17 @@ const locales: Record<Locale, object> = { ko, en };
 
 export const locale = writable<Locale>('ko');
 
-/** Call once on client mount to restore saved locale */
+/** Call once on client mount.
+ *  Priority: 1) localStorage  2) browser language  3) 'en' */
 export function initLocale() {
 	if (typeof window === 'undefined') return;
 	const saved = localStorage.getItem('locale');
-	if (saved === 'ko' || saved === 'en') locale.set(saved);
+	if (saved === 'ko' || saved === 'en') {
+		locale.set(saved);
+		return;
+	}
+	const browserLang = navigator.language ?? navigator.languages?.[0] ?? '';
+	locale.set(browserLang.startsWith('ko') ? 'ko' : 'en');
 }
 
 export function setLocale(l: Locale) {

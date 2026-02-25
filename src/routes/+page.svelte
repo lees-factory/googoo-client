@@ -10,22 +10,31 @@
 	} from 'lucide-svelte';
 	import { t } from '$lib/i18n';
 	import LanguageSwitcher from '$lib/components/LanguageSwitcher.svelte';
+	import logo from '$lib/assets/logo.png';
 </script>
 
 <div class="min-h-screen bg-linear-to-b from-[#F7F8FA] to-white">
 	<!-- Header -->
 	<header class="sticky top-0 z-10 border-b border-gray-200 bg-white/80 backdrop-blur-sm">
-		<div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-			<div class="flex items-center gap-2">
-				<Package class="h-6 w-6 text-[#3B82F6]" />
-				<h1 class="text-[16px] font-semibold text-gray-900">{$t('nav.title')}</h1>
-			</div>
+		<div class="mx-auto grid max-w-5xl grid-cols-3 items-center px-6 py-3">
+			<!-- Left: nav links -->
 			<nav class="flex items-center gap-6">
 				<a href="#features" class="text-[13px] text-gray-600 hover:text-gray-900"
 					>{$t('nav.features')}</a
 				>
 				<a href="#demo" class="text-[13px] text-gray-600 hover:text-gray-900">{$t('nav.demo')}</a>
 				<a href="#faq" class="text-[13px] text-gray-600 hover:text-gray-900">{$t('nav.faq')}</a>
+			</nav>
+
+			<!-- Center: logo -->
+			<div class="flex justify-center">
+				<a href="/">
+					<img src={logo} alt={$t('nav.title')} class="h-9 w-auto object-contain" />
+				</a>
+			</div>
+
+			<!-- Right: language switcher + CTA -->
+			<div class="flex items-center justify-end gap-3">
 				<LanguageSwitcher />
 				<a
 					href="/popup"
@@ -33,7 +42,7 @@
 				>
 					{$t('nav.demoBtn')}
 				</a>
-			</nav>
+			</div>
 		</div>
 	</header>
 
