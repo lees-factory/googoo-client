@@ -2,17 +2,14 @@ export default {
 	nav: {
 		title: 'Proxy Buying Tool',
 		features: 'Features',
-		demo: 'Demo',
-		faq: 'FAQ',
-		demoBtn: 'View Demo'
+		faq: 'FAQ'
 	},
 	hero: {
 		badge: 'Chrome Extension',
 		headingLine1: 'Proxy Buying,',
 		headingLine2: 'Faster & Simpler',
 		desc: 'No more Excel spreadsheets. Manage order number matching and profit calculation easily with our Chrome extension.',
-		addToChrome: 'Add to Chrome',
-		webDemo: 'Try Web Demo'
+		addToChrome: 'Add to Chrome'
 	},
 	features: {
 		heading: 'Key Features',
@@ -36,8 +33,7 @@ export default {
 		desc: 'Ready to use right after installation. No sign-up or extra setup required.',
 		step1: { title: 'Install Extension', desc: 'One-click install from the Chrome Web Store' },
 		step2: { title: 'Enter Orders', desc: 'Input store and supplier order numbers and save' },
-		step3: { title: 'Calculate Profit', desc: 'Check profit margin in real time after entering product info' },
-		demoBtn: 'Try Web Demo'
+		step3: { title: 'Calculate Profit', desc: 'Check profit margin in real time after entering product info' }
 	},
 	quickLinks: {
 		settings: { title: 'Settings', desc: 'Configure exchange rate, fees, and manage CSV data' },

@@ -2,17 +2,14 @@ export default {
 	nav: {
 		title: '구매대행 도구',
 		features: '기능',
-		demo: '데모',
-		faq: 'FAQ',
-		demoBtn: '데모 보기'
+		faq: 'FAQ'
 	},
 	hero: {
 		badge: 'Chrome Extension',
 		headingLine1: '구매대행 업무를',
 		headingLine2: '더 빠르고 간편하게',
 		desc: '엑셀과 수기 작업은 이제 그만. 주문번호 매칭과 수익 계산을 크롬 확장프로그램으로 간단하게 관리하세요.',
-		addToChrome: 'Chrome에 추가하기',
-		webDemo: '웹 데모 체험'
+		addToChrome: 'Chrome에 추가하기'
 	},
 	features: {
 		heading: '핵심 기능',
@@ -36,8 +33,7 @@ export default {
 		desc: '설치 후 바로 사용 가능합니다. 별도의 회원가입이나 설정이 필요 없습니다.',
 		step1: { title: '확장프로그램 설치', desc: '크롬 웹스토어에서 한 클릭으로 설치' },
 		step2: { title: '주문번호 입력', desc: '쇼핑몰과 공급처 주문번호를 입력하고 저장' },
-		step3: { title: '수익 계산', desc: '상품 정보 입력 시 실시간 수익률 확인' },
-		demoBtn: '웹 데모 체험하기'
+		step3: { title: '수익 계산', desc: '상품 정보 입력 시 실시간 수익률 확인' }
 	},
 	quickLinks: {
 		settings: { title: '설정 페이지', desc: '기본 환율, 수수료 설정 및 CSV 데이터 관리' },
